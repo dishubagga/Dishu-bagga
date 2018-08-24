@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Dishu Bagga
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="jumbotron text-center" style="background-color:#e9e7e6">
+      <p align="center">
+        <img src="walk.gif" class="img-responsive" alt="dishulogo" width="200" height="100">
+      </p>
+      <h1 style="color:#3c313f">Dishu Bagga</h1>
+      <h2 id="changeText"></h2>
+      <br>
+      <a href=#coffeewithme class=btn style="background-color:#555555; color:white">Coffee with me?</a>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-1"></div>
+      <div class="col-xs-5">
+        <div>
+          <img src=img/dishu.jpg class=logo width="400">
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <h1 align="center">About me.</h1>
+        <div style="color:#000000">
+          <h4>Hi! I am Dishu Bagga, a 21 year old tech enthusiast, Programmer, Web Developer, living in Rajpura and currently
+            pursuing B.E. in computer engineering.
+            </br>
+            </br>
+            Have a look at my projects, skills or directly download my resume. I am always excited to work on some awesome projects.
+          </h4>
+          <div class="columns medium-12">
+            <ul class=tools align="center">
+              <a href=https://github.com/dishubagga target=_blank>
+                <i class="fa fa-github-square fa_custom fa-3x"> </i>
+              </a>
+              <a href=mailto:dishubagga9111@gmail.com target=_blank>
+                <i class="fa fa-envelope" style="font-size:45px"></i>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+
+    <div class="jumbotron text-center" style="background-color:#d1cfcf">
+      
+      <div class="row">
+        <div class="col-md-12">
+          <h2> My Projects! </h2>
+        </div>
+      </div>
+      <div class="row">
+            <div class="col-xs-6">
+                <h3>Camp Review site!</h1>
+                <div class="thumbnail" >
+                    <a href="https://yelpcamp-byd.herokuapp.com/" target="_blank">
+                      <img class="img-responsive" src="img/campsite3.png" >
+                      <div class="caption">
+                      <p>An online web application for posting reviews by the users for different camp sites using Nodejs, Bootstrap, Css, Html, Mongodb, ejs.</p>
+                      </div>
+                    </a>
+
+                </div>
+            </div>  
+            
+            <div class="col-xs-6">
+              <h3>Complaint Management System</h1>
+              <div class="thumbnail" >
+                  <a href=https://github.com/dishubagga/Complaint-management-system" target="_blank">
+                    <img class="img-responsive" src="img/complaintsite1.png" >
+                    <div class="caption">
+                    <p>An online web application for sending complaints to teachers by the students for using Nodejs, Bootstrap, Css, Html, Mongodb, ejs.</p>
+                    </div>
+                  </a>
+
+              </div>
+          </div> 
+    </div>
+
+  </div>
+  
+  <script>
+    var text = ["I am Learner!", "I am Programmer!", "I am Web Developer!"];
+    var counter = 0;
+    var elem = document.getElementById("changeText");
+    var inst = setInterval(change, 1200);
+    function change() {
+      elem.innerHTML = text[counter];
+      counter++;
+      if (counter >= text.length) {
+        counter = 0;
+        // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+      }
+    }
+  </script>
+</body>
+
+</html>
